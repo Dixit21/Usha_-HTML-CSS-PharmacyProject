@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Patient Details</title>
+    <link rel="stylesheet" href="Form.css">
+  </head>
+  <body>
+    <div class="bg-img">
+    <h3>Registration Form</h3>
+    
+    <form class="form"  action="">
+            <img id="img" src="DoctorImage.JPG" alt="DoctorImage">
+            <b>1.Your Contact Details:</b><br />
+               <input type="text" placeholder="Full Name" required/> 
+               <input type="text" placeholder="Patient id if exists"/><br />
+               <input type="text" name="Contact Number" placeholder="Contact Number" min="5000000000" max="9999999999" required>
+               <input type="email" name="EmailId" placeholder="Email id" required><br>
+          <b>2.Address:</b><br />
+               <input number="text" placeholder="H-No" /> 
+               <input type="text" placeholder="Street"/><br />
+               <input type="text" placeholder="Area" /> 
+               <br /><br />
+          <b>District</b><br>
+               <select name="District">
+                  <option value="Choose">Choose</option>
+                  <option value="Rohtas">Rohtas</option>
+                  <option value="patna">Patna</option>
+                  <option value="Sasaram">Sasaram</option>
+                  <option value="begusarai">begusarai</option>
+                  <option value="Other">Other</option>
+               </select><br> 
+
+          <b>Choose the Test Type:</b><br />
+                <label for="101">
+                  <input id="101" type="checkbox" value="CBC" name="Test"  />CBC
+                </label>
+                <label for="102"> 
+                  <input id="102" type="checkbox" value="Complete Urine" name="Test"  />Complete Urine
+                </label>
+                <label for="103">
+                  <input id="103" type="checkbox" value="Lipid Profile" name="Test"/>Lipid Profile
+                </label> <br> 
+                <label for="104">
+                  <input id="104" type="checkbox" value="Thyroid Stimulating Hormone(TSH)" name="Test"/>Thyroid Stimulating Hormone(TSH)
+                </label>
+                <label for="105">
+                  <input id="105" type="checkbox" value="Glucose Test" name="Test" />Glucose Test
+                </label><br>
+          <b>Do you want a hard copy of the report also?</b><br>
+                  <label for="106">
+                     <input id="106"  type="radio" value="yes" name="report" />yes
+                  </label>
+                  <label for="107">
+                     <input id="107" type="radio" value="No" name="report" />No
+                  </label><br>
+          <B>Select Your Comfortable Date and Time:</B><br>
+                <label for="101">
+                  <input id="103" type="date" value="Date" name="Date"  required/>Date
+                  <input  id="103"  type="time" value="time" name="time" required/>time
+                </label><br> 
+
+                <button type="submit">submit</button>
+                <button type="reset">Reset</button>
+    </form>
+  </div> 
+  </body>
+</html>
